@@ -4,4 +4,4 @@ Scripts to manage garden watering with ioBroker and running a control panel base
 The JS scripts for ioBroker using a global function “event” 
 by ruhr70 https://forum.iobroker.net/viewtopic.php?f=21&t=13209#p139023
 
-You can find a complete description (in German) here:
+You can find a complete description (in German) here: https://lutz-und-weg.de/die-gartenbewaesserung
