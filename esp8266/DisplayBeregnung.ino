@@ -36,15 +36,15 @@ LiquidCrystal_I2C lcd3(0x27, 20, 4);
 
 // WLAN access data
 
-const char* ssid          = "XXXXXXXXXXXXXXXX";                                        
-const char* password      = "XXXXXXXXXXXXXXXXXXXX";                                
+const char* ssid          = "XXXXXXXXXXXX";                                        
+const char* password      = "XXXXXXXXXXXX";                                
 
 // MQTT access data
 
-const char* mqtt_server   = "XXXXXXXXXXXXXXXXXXXX";
-const char* mqtt_user     = "XXXXXXXX";
-const char* mqtt_password = "XXXXXXXX";
-const char* mqtt_client   = "XXXXXXXXXXXXXXXX";
+const char* mqtt_server   = "XXXXXXXXXXXX";
+const char* mqtt_user     = "XXXXXXXXXXXX";
+const char* mqtt_password = "XXXXXXXXXXXX";
+const char* mqtt_client   = "XXXXXXXXXXXX";
 
 
 // Def of the PIR sensor
@@ -55,7 +55,7 @@ long unsigned int lowIn; //the time when the sensor outputs a low impulse
 long unsigned int pause = 5000; // milliseconds the sensor has to be low before we assume all motion has stopped
 boolean lockLow = true;
 boolean takeLowTime;
-int pirPin = D7;  // Digital pin D7
+int pirPin = 'D7';  // Digital pin D7
 
 
 WiFiClient espClient;
@@ -71,8 +71,8 @@ int value = 0;
 
 void setup_wifi() {
    delay(100);
-   pinMode(D6, OUTPUT);                                                 
-   digitalWrite(D6, HIGH);
+   pinMode('D6', OUTPUT);                                                 
+   digitalWrite('D6', HIGH);
    Serial.print("Schalte internen Access Port ab");      
    WiFi.mode(WIFI_STA);                                                                     
    Serial.print("Connecting to ");
